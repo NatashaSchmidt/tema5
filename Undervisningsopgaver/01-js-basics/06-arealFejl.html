@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        let laengde = prompt("Hvad er længden?");
+        let bredden = prompt("Hvad er bredden?");
+
+        function areal(l, b) {
+            let a = (l * b);
+            if (a == 0) {
+                return (`Længde og bredde skal være tal. Prøv igen.`);
+            } else if (isNaN(a)) {
+                return (`Fejl. Prøv igen med tal.`);
+            } else {
+                return (`arealet er ${a}. Vil du lave et nyt areal?`);
+            }
+        }
+
+        let resultat = areal(laengde, bredden);
+
+        confirm(resultat);
+
+        if (confirm) {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
