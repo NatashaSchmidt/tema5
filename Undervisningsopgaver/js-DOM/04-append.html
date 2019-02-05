@@ -34,17 +34,28 @@
     <script>
         const firkant = `http://helf-kea.dk/test/frog.png`;
         const cirkel = "http://helf-kea.dk/test/gris.png";
-        const fox = "http://helf-kea.dk/test/fox.png";
+
+        //lav en variabel, hvor man skaber et billede.(createElement)
+        //lav en src til variablen, som finder billedet. Billedet bliver dermed tilføjet til variablen.
+        const fox = document.createElement("img");
+        fox.src = "http://helf-kea.dk/test/fox.png";
 
         document.querySelector(".firkant").innerHTML = `<img src= ${firkant} alt="frø">`;
         document.querySelector(".cirkel").innerHTML = `<img src= ${cirkel} alt="gris">`;
-        document.querySelector(".cirkel").innerHTML += `<img src= ${fox} alt="ræv">`;
+
+        //appendChild(varibablen hvor det nyskabte element(createElement) er i)
+        document.querySelector(".cirkel").appendChild(fox);
 
 
         //        ELLER:
 
         //        document.querySelector(".firkant").innerHTML = `<img src=http://helf-kea.dk/test/frog.png alt="frø">`;
         //        document.querySelector(".cirkel").innerHTML = `<img src=http://helf-kea.dk/test/gris.png alt="gris">`;
+
+
+
+        //info.innerHTML = indsætter HTML-kode i info-variablen
+        //info.innerHTML += tilføjer noget HTML til info-variablen
     </script>
 </body>
 
