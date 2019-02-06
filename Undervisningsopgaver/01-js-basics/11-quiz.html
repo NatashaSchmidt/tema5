@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        let points = 0;
+
+        function sporg(sporgsmaal, rigtigtSvar) {
+            let svar = prompt(sporgsmaal);
+            if (svar == rigtigtSvar) {
+                points++;
+                alert("Rigtigt svar! +1 point");
+            } else {
+                points--;
+                alert("Forkert svar! -1 point");
+            }
+        }
+
+        sporg("Hvilket år er Anderson .Paak født?", 1986);
+        sporg("Hvad hedder Anderson .Paak's første fødte søn?", "Soul");
+        sporg("Hvem valgte at signere Anderson .Paak?", "Dr. Dre");
+        sporg("Hvor mange albums har Anderson .Paak udgivet?", 6);
+        sporg("Hvad hed albummet, som Anderson .Paak udgav med projektet 'NxWorries'?", "Yes Lawd!");
+
+        alert(`Quizzen er nu slut - Du fik ${points} points!`);
+    </script>
+</body>
+
+</html>
