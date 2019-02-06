@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js-oevelse-1</title>
+    <style>
+        body {
+            color: burlywood;
+        }
+
+        #display {
+            width: 25vw;
+            height: 55vw;
+            border: 1px solid silver;
+            margin: 7vw;
+            padding: 1vw;
+        }
+
+        /*********************/
+    </style>
+
+</head>
+
+<body>
+    <div id="display"></div>
+
+    <script>
+        let playliste = ["1. LSD", "2. Jukai", "3. While We're Young", "4. Moments", "5. OLLA (Only Lovers Left Alive)", "6. When We Love", "7. Sativa", "8. New Balance", "9. Newer Balance (Freestyle)", "10. You Are Here", "11. Never Call Me", "12. Nobody", "13. Overstimulated", "14. Bad Trip (Interlude)", "15. Oblivion (Creation)", "16. Psilocybin (Love in Full Effect)", "17. Mystic Journey (Freestyle)", "18. Picture Perfect (Freestyle)", "19. Sing To Me", "20. Frequency", "21. Ascension", "22. Trip", "23. Clear My Mind", "24. Hello Ego"];
+        playliste.forEach(sange => {
+            document.querySelector("#display").innerHTML += `${sange} <br>`;
+        })
+    </script>
+</body>
+
+</html>
