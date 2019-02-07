@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .alleDyr {
+            border: 1px solid black;
+            margin 5px;
+            padding: 5px;
+        }
+
+        #liste {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="liste"></div>
+
+    <script>
+        let dyr = [{
+                "navn": "gris",
+                "type": "pattedyr",
+                "billede": "http://helf-kea.dk/test/gris.png",
+                "levested": "svinefarm"
+            }, {
+                "navn": "frø",
+                "type": "amfible",
+                "billede": "http://helf-kea.dk/test/frog.png",
+                "levested": "frøfram"
+            }, {
+                "navn": "ræv",
+                "type": "pattedyr",
+                "billede": "http://helf-kea.dk/test/fox.png",
+                "levested": "rævefarm"
+            }, {
+                "navn": "sild",
+                "type": "fisk",
+                "billede": "http://helf-kea.dk/test/sild.jpg",
+                "levested": "sildefarm"
+            }, {
+                "navn": "krokodille",
+                "type": "krybdyr",
+                "billede": "http://helf-kea.dk/test/kroko.jpg",
+                "levested": "krokodillefarm"
+            },
+
+        ];
+
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+
+            let hej = document.querySelector("#liste");
+            console.log(dyr);
+
+            function visDyr() {
+                dyr.forEach(enkeltDyr => {
+                    hej.innerHTML +=
+                        `<div class="alleDyr">
+                            <h3>${enkeltDyr.navn}</h3>
+                            <img src="${enkeltDyr.billede}" alt="${enkeltDyr.navn}">
+                            <p>${enkeltDyr.type}</p>
+                            <p>${enkeltDyr.levested}</p>
+                            </div>
+                        `;
+                });
+            }
+
+            visDyr();
+
+        }
+    </script>
+</body>
+
+</html>

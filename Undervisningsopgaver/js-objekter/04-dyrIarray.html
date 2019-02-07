@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <div></div>
+
+    <script>
+        let dyr = [{
+                "navn": "gris",
+                "type": "pattedyr",
+                "billede": "http://helf-kea.dk/test/gris.png",
+                "levested": "svinefarm"
+            }, {
+                "navn": "frø",
+                "type": "amfible",
+                "billede": "http://helf-kea.dk/test/frø.png",
+                "levested": "frøfram"
+            }, {
+                "navn": "ræv",
+                "type": "pattedyr",
+                "billede": "http://helf-kea.dk/test/fox.png",
+                "levested": "rævefarm"
+            }, {
+                "navn": "sild",
+                "type": "fisk",
+                "billede": "http://helf-kea.dk/test/sild.jpg",
+                "levested": "sildefarm"
+            }, {
+                "navn": "krokodille",
+                "type": "krybdyr",
+                "billede": "http://helf-kea.dk/test/kroko.jpg",
+                "levested": "krokodillefarm"
+            }
+
+        ];
+
+        console.log(dyr);
+        //        console.log(`Dyr: ${dyr.navn}, type: ${dyr.type}, levested: ${dyr.levested}`
+        //                   `Dyr: ${dyr[1].navn}, type: ${dyr[1].type}, levested: ${dyr[1].levested}`
+        //                   `Dyr: ${dyr[2].navn}, type: ${dyr[2].type}, levested: ${dyr[2].levested}`
+        //                   `Dyr: ${dyr[3].navn}, type: ${dyr[3].type}, levested: ${dyr[3].levested}`
+        //                   `Dyr: ${dyr[4].navn}, type: ${dyr[4].type}, levested: ${dyr[4].levested}`);
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+
+            let div = document.querySelector("div");
+            div.textContent += `Dyr: ${dyr.navn}, type: ${dyr.type}, levested: ${dyr.levested} <br>`;
+            div.innerHTML += `<img src="${dyr.billede}" alt="gris">`;
+
+
+
+        }
+    </script>
+</body>
+
+</html>
