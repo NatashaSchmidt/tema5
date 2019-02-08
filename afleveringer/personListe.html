@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .allePersoner {
+            border: 1px solid black;
+            margin 5px;
+            padding: 5px;
+        }
+
+        #liste {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .billede {
+            width: 150px;
+            display: grid;
+            margin: 2vw auto;
+
+        }
+
+        body {
+            margin: 5vw 15vw;
+        }
+
+        h2 {
+            display: grid;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="liste"></div>
+
+    <script>
+        let dyr = [];
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let hej = document.querySelector("#liste");
+            console.log(dyr);
+
+            async function getJson() {
+                let hentJson = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1OLlD_GRoz71piHvnW306omRAyHS7vtLOILQt-K0YF_c");
+                dyr = await hentJson.json();
+                visPersonliste();
+            }
+
+            function visPersonliste() {
+                dyr.forEach(enkeltePersoner => {
+                    hej.innerHTML +=
+                        `<div class="allePersoner">
+                            <h2>${enkeltePersoner.navn}</h2>
+                            <img class="billede" src="${enkeltePersoner.billede}" alt="${enkeltePersoner.navn}">
+                            <p>Link til Github: <a href="http://www.github.com/${enkeltePersoner.github}">${enkeltePersoner.github} </a> </p> </div>
+                        `;
+                });
+            }
+
+            getJson()
+
+        }
+
+    </script>
+</body>
+
+</html>
