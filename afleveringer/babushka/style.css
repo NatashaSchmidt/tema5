@@ -1,21 +1,81 @@
-     .alleRetter {
-         border: 1px solid black;
-         margin 5px;
-         padding: 5px;
-     }
+ body {
 
-     #liste {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-     }
+     margin: 0;
+ }
 
-     .billede {
-         width: 150px;
-         display: grid;
-         margin: 0 auto;
+ h1 {
+     text-align: center;
+     font-family: monospace;
+     font-size: 5em;
+     font-weight: 100;
+     color: #fcc7c7;
+     margin: 0;
+ }
 
-     }
+ h2 {
+     display: grid;
+     text-align: center;
+     font-family: monospace;
+     text-decoration: overline;
+ }
 
-     body {
-         margin: 5vw 15vw;
-     }
+ p {
+     font-family: monospace;
+ }
+
+ .alleRetter {
+     border-style: double;
+
+     padding: 2vw;
+ }
+
+ #overskrift {}
+
+ #liste {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 1vw;
+     grid-row-gap: 1vw;
+     margin: 0vw 15vw 5vw 15vw;
+ }
+
+ .billede {
+     width: 100%;
+     display: grid;
+     margin: 0 auto;
+ }
+
+ header {
+     background-color: #058905;
+     padding: 5vw;
+ }
+
+
+ nav {
+     text-align: center;
+     margin: 1vw 0vw;
+ }
+
+
+ button {
+     margin: 1vw;
+     font-size: 1rem;
+     font-family: monospace;
+     padding: 0.5vw 2vw;
+     border-radius: 20%;
+     box-shadow: 7px 6px rgba(245, 35, 35, 0.09);
+ }
+
+ .valgt {
+     background-color: rgba(245, 35, 35, 0.09);
+ }
+
+
+ footer {
+     font-size: 1rem;
+     font-style: italic;
+     font-weight: 100;
+     font-family: monospace;
+     margin: 0vw 15vw 1vw;
+     background-color: rgba(230, 227, 227, 0.53);
+ }
