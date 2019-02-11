@@ -1,0 +1,21 @@
+     .alleRetter {
+         border: 1px solid black;
+         margin 5px;
+         padding: 5px;
+     }
+
+     #liste {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     .billede {
+         width: 150px;
+         display: grid;
+         margin: 0 auto;
+
+     }
+
+     body {
+         margin: 5vw 15vw;
+     }

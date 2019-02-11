@@ -33,10 +33,29 @@
             text-align: center;
         }
 
+        .knap {
+            border: 1px solid black;
+        }
+
+
+        .midten {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            margin: 0 10px 10px;
+        }
+
     </style>
 </head>
 
 <body>
+    <div class="midten">
+        <button class="filter" data-hold="alle"> Alle </button>
+        <button class="filter" data-hold="a"> Hold A </button>
+        <button class="filter" data-hold="b"> Hold B </button>
+    </div>
 
     <div id="liste"></div>
 
@@ -46,6 +65,7 @@
 
         function start() {
             let hej = document.querySelector("#liste");
+            let filter = "b";
             console.log(dyr);
 
             async function getJson() {
@@ -56,12 +76,15 @@
 
             function visPersonliste() {
                 dyr.forEach(enkeltePersoner => {
-                    hej.innerHTML +=
-                        `<div class="allePersoner">
+                    if (enkeltePersoner.hold == filter) {
+                        hej.innerHTML +=
+                            `<div class="allePersoner">
                             <h2>${enkeltePersoner.navn}</h2>
                             <img class="billede" src="${enkeltePersoner.billede}" alt="${enkeltePersoner.navn}">
-                            <p>Link til Github: <a href="http://www.github.com/${enkeltePersoner.github}">${enkeltePersoner.github} </a> </p> </div>
+                            <p>Link til Github: <a href="http://www.github.com/${enkeltePersoner.github}">${enkeltePersoner.github} </a> </p>
+                            <p>Hold: ${enkeltePersoner.hold}</div>
                         `;
+                    }
 
                 });
             }
