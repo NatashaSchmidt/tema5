@@ -25,7 +25,7 @@
 
  .alleRetter {
      border-style: double;
-
+     background-color: #ffffff;
      padding: 2vw;
  }
 
@@ -41,6 +41,12 @@
 
  .billede {
      width: 100%;
+     display: grid;
+     margin: 0 auto;
+ }
+
+ .billede_popup {
+     width: 50%;
      display: grid;
      margin: 0 auto;
  }
@@ -78,4 +84,30 @@
      font-family: monospace;
      margin: 0vw 15vw 1vw;
      background-color: rgba(230, 227, 227, 0.53);
+ }
+
+ #popup {
+     width: 85vw;
+     height: 100vh;
+     position: fixed;
+     left: 7%;
+     right: 7%;
+     top: 7.5%;
+ }
+
+ #indhold {
+     box-sizing: border-box;
+     width: 75vw;
+     height: 100vh;
+     margin: auto;
+ }
+
+ #luk {
+     box-sizing: border-box;
+     text-align: right;
+     padding-right: 1em;
+ }
+
+ #luk button {
+     font-size: 2em;
  }

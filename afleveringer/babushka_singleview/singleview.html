@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bistro Babushka</h1>
+    </header>
+
+    <div id="singleview">
+        <div id="tilbage"><button>
+                << </button> </div> <div id="indhold">
+        </div>
+    </div>
+
+    <script>
+        let madretter = [];
+        let urlParams = new URLSearchParams(window.location.search);
+        let navne = urlParams.get("navne");
+        let retten;
+
+        document.addEventListener("DOMContentLoaded", start);
+
+
+        function start() {
+            let hej = document.querySelector("#liste");
+            let filter = "alle";
+            console.log(madretter);
+
+            async function getJson() {
+                let hentJson = await fetch("script.json");
+                madretter = await hentJson.json();
+
+                madretter.forEach(obj => {
+                    if (obj.navne == navne) {
+                        retten = obj;
+                    }
+                });
+
+                åbn();
+            }
+
+            function åbn() {
+                document.querySelector("#indhold").innerHTML =
+                    `<article class="alleRetter">
+                        <h1>${retten.navn}</h1>
+                        <img class="billede" src="imgs/small/${retten.billede}-sm.jpg" alt="${retten.navn}">
+                        <p>${retten.kategori}, ${retten.kort}</p>
+                        </div>
+                        <p>${retten.oprindelse}</p>
+                        <p>${retten.lang}</p>
+                        <p>${retten.pris},-</p>
+                    </article>`;
+            }
+
+
+            document.querySelector("#tilbage button").addEventListener("click", () => {
+                location.href = "index.html";
+            });
+
+            getJson();
+        }
+
+    </script>
+</body>
+
+</html>
