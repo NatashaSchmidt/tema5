@@ -71,6 +71,15 @@
 
 
  button {
+     margin: 1vw;
+     font-size: 1rem;
+     font-family: monospace;
+     padding: 0.5vw 2vw;
+     border-radius: 20%;
+     box-shadow: 7px 6px rgba(245, 35, 35, 0.09);
+ }
+
+ .singleview {
      margin: 1vw 1vw 1vw 10vw;
      font-size: 1rem;
      font-family: monospace;
