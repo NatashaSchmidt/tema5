@@ -21,16 +21,16 @@
 
     <script>
         let madretter = [];
-        let urlParams = new URLSearchParams(window.location.search);
-        let navne = urlParams.get("navne");
         let retten;
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
 
         document.addEventListener("DOMContentLoaded", start);
 
 
         function start() {
             let hej = document.querySelector("#liste");
-            let filter = "alle";
+            //            let filter = "alle";
             console.log(madretter);
 
             async function getJson() {
@@ -38,7 +38,7 @@
                 madretter = await hentJson.json();
 
                 madretter.forEach(obj => {
-                    if (obj.navne == navne) {
+                    if (obj.id == id) {
                         retten = obj;
                     }
                 });
@@ -48,9 +48,9 @@
 
             function åbn() {
                 document.querySelector("#indhold").innerHTML =
-                    `<article class="alleRetter">
-                        <h1>${retten.navn}</h1>
-                        <img class="billede" src="imgs/small/${retten.billede}-sm.jpg" alt="${retten.navn}">
+                    `<article class="alleRetter_singleview">
+                        <h2>${retten.navn}</h2>
+                        <img class="billede_singleview" src="imgs/small/${retten.billede}-sm.jpg" alt="${retten.navn}">
                         <p>${retten.kategori}, ${retten.kort}</p>
                         </div>
                         <p>${retten.oprindelse}</p>
@@ -66,7 +66,6 @@
 
             getJson();
         }
-
     </script>
 </body>
 

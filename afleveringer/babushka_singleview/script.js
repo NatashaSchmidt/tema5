@@ -30,7 +30,7 @@
                         `;
                    hej.insertAdjacentHTML("beforeend", template);
                    hej.lastElementChild.addEventListener("click", () => {
-                       location.href = "singleview.html?navne=" + enkelteRetter.navn;
+                       location.href = "singleview.html?id=" + enkelteRetter.id;
                    });
 
                }
