@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="elfuerte.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="billeder_af_restaurant/coverbillede_desktop.png">
+            <source media="(min-width: 768px)" srcset="billeder_af_restaurant/coverbillede_tablet.png">
+            <source media="(min-width: 450px)" srcset="billeder_af_restaurant/coverbillede_mobile.png">
+            <img src="billeder_af_restaurant/coverbillede_mobile.png" alt="coverbillede">
+        </picture>
+    </header>
+
+    <div id="singleview">
+        <div id="tilbage"><button class="singleview">
+                << </button> </div> <div id="indhold">
+        </div>
+    </div>
+
+    <script>
+        let madretter = [];
+        let retten;
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+
+        document.addEventListener("DOMContentLoaded", start);
+
+
+        function start() {
+            let hej = document.querySelector("#liste");
+            //            let filter = "alle";
+            console.log(madretter);
+
+            async function getJson() {
+                let hentJson = await fetch("elfuerte.json");
+                madretter = await hentJson.json();
+
+                madretter.forEach(obj => {
+                    if (obj.id == id) {
+                        retten = obj;
+                    }
+                });
+
+                åbn();
+            }
+
+            function åbn() {
+                document.querySelector("#indhold").innerHTML =
+                    `<article class="alleRetter_singleview">
+                        <h2>${retten.id}. ${retten.navn}</h2>
+                        <img class="billede_singleview" src="billeder/${retten.billede}.jpg.png" alt="${retten.navn}">
+                        <p>${retten.kategori}</p>
+                        <p>${retten.lang}</p>
+                        <p>${retten.pris},-</p>
+                    </article>`;
+            }
+
+
+            document.querySelector("#tilbage button").addEventListener("click", () => {
+                location.href = "elfuerte.html";
+            });
+
+            getJson();
+        }
+    </script>
+</body>
+
+</html>

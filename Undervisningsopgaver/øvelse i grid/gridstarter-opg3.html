@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Css Grid</title>
+    <style>
+        .item-a {
+            /*            grid-area: item-a;*/
+            height: 50px;
+            background-color: goldenrod;
+        }
+
+        .item-b {
+            height: 200px;
+            /*            grid-area: item-b;*/
+            background-color: #85a05c;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .item-c {
+            height: 30px;
+            /*            grid-area: item-c;*/
+            background-color: darkred;
+        }
+
+        .item-d {
+            /*            grid-area: item-d;*/
+            grid-gap: 10px;
+            background-color: #4bada3;
+
+
+        }
+
+
+        .container {
+            display: grid;
+            grid-gap: 3px;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4fr 1fr;
+
+            /*          grid-template-columns: 100px 100px 100px 100px;*/
+            /*
+grid-template-areas:
+"item-a item-a item-a item-a"
+"item-b item-b item-b item-b"
+"item-c item-c item-c item-c";
+*/
+        }
+
+        .item {
+            border: 1px solid #000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a">A</div>
+        <div class="item item-b">
+            <div class="item item-d">D</div>
+            <div class="item item-d">D</div>
+            <div class="item item-d">D</div>
+            <div class="item item-d">D</div>
+            <div class="item item-d">D</div>
+            <div class="item item-d">D</div>
+            <div class="item item-d">D</div>
+            <div class="item item-d">D</div>
+        </div>
+        <div class="item item-c">C</div>
+        <!--<div class="item item-d">D</div>-->
+    </div>
+</body>
+
+</html>
+<!--
+Opgave
+https://docs.google.com/document/d/1U2ztFPE8zterK1DdqbvW4gK6jQ4CfWAVSRnOPn5_VNc/edit-->

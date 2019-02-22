@@ -1,0 +1,288 @@
+ body {
+
+     margin: 0;
+     background-color: #22B573;
+ }
+
+
+
+ h1 {
+     display: grid;
+     text-align: center;
+     font-family: Sukhumvit Set;
+     font-weight: 100;
+     font-size: 2em;
+ }
+
+ h2 {
+     display: grid;
+     text-align: center;
+     font-family: Sukhumvit Set;
+     font-weight: 100;
+     font-size: 2em;
+ }
+
+ h3 {
+     display: grid;
+     text-align: center;
+     font-family: Sukhumvit Set;
+     font-weight: 100;
+     font-size: 2em;
+     text-decoration-line: overline;
+ }
+
+ p {
+     font-family: Apple SD Gothic Neo;
+ }
+
+ .alleRetter {
+     /*     border-style: double;*/
+     padding: 2vw;
+
+ }
+
+ .alleRetter_singleview {
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 1vw;
+     grid-row-gap: 1vw;
+     margin: 0vw 15vw 5vw 15vw;
+ }
+
+ #baggrund {
+     background-color: rgba(244, 244, 244, 0.72);
+     margin: 0vw 5vw 1vw 5vw;
+     padding: 1vw;
+ }
+
+ .liste {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 1vw;
+     grid-row-gap: 1vw;
+     padding: 2vw;
+     cursor: pointer;
+ }
+
+
+ .billede {
+     width: 100%;
+     display: grid;
+     margin: 0 auto;
+ }
+
+ .billede_singleview {
+     width: 50%;
+     display: grid;
+     margin: 0 auto;
+ }
+
+
+ header img {
+     width: 100%;
+     cursor: pointer;
+ }
+
+ nav {
+     text-align: center;
+     margin: 1vw 0vw;
+     margin: 1vw 0vw;
+ }
+
+
+ button {
+     margin: 1vw;
+     font-size: 1rem;
+     font-family: Sukhumvit Set;
+     padding: 1vw;
+     background-color: #F4F4F4;
+     border-radius: 10%;
+     min-width: 10vw;
+     cursor: pointer;
+     /*
+     border-radius: 20%;
+     box-shadow: 7px 6px rgba(245, 35, 35, 0.09);
+*/
+ }
+
+ #burgermenu {
+     display: none;
+     position: relative;
+     background-color: rgba(244, 244, 244, 0.72);
+     padding: 0vw 2vw 1vw;
+     left: 84vw;
+     top: 1vw;
+ }
+
+ #menu {
+     display: none;
+ }
+
+
+ @media only screen and (max-width: 600px) {
+
+     header img {
+         /*         position: absolute;*/
+         margin: -1vw 0vw;
+     }
+
+     button {
+         display: none;
+     }
+
+     .hidden {
+         transform: translateX(200%);
+         /*    opacity: 0;*/
+     }
+
+
+
+     #burgermenu {
+         display: inline-block;
+         font-size: 2em;
+         position: relative;
+         /*             transform: rotate(90deg);*/
+     }
+
+     #menu {
+         display: block;
+         list-style-type: none;
+         transition: transform 1s;
+         position: relative;
+         left: 71vw;
+         padding: 3vw;
+         background-color: rgba(244, 244, 244, 0.72);
+         width: 20vw;
+         text-align: right;
+         font-family: Sukhumvit Set;
+         cursor: pointer;
+         /*    transition: opacity 0.5s;*/
+     }
+
+     nav {
+         max-width: 17vw;
+         position: fixed;
+         top: 0;
+     }
+
+     main {
+         margin-top: 3vw;
+     }
+
+ }
+
+ .singleview {
+     margin: 1vw;
+     font-size: 1rem;
+     font-family: Sukhumvit Set;
+     padding: 1vw;
+     background-color: #F4F4F4;
+     border-radius: 10%;
+     min-width: 10vw;
+     cursor: pointer;
+ }
+
+ .valgt {
+     background-color: #FBB03B;
+ }
+
+
+ footer {
+     font-size: 1rem;
+     font-weight: 200;
+     font-family: Sukhumvit Set;
+     /*     background-color: #FBB03B;*/
+     background-color: #FBB03B;
+     padding: 1vw;
+     text-align: center;
+ }
+
+ #singleview {
+     width: 100vw;
+     height: 100vh;
+
+ }
+
+ #indhold {
+     background-color: rgba(244, 244, 244, 0.72);
+     padding: 1vw;
+     box-sizing: border-box;
+     width: 90vw;
+     height: 90vh;
+     margin: auto;
+ }
+
+ #tilbage {
+     box-sizing: border-box;
+     text-align: left;
+     padding-right: 1em;
+ }
+
+ #luk button {
+     font-size: 2em;
+ }
+
+ .om {
+     padding: 2vw;
+ }
+
+ /*****************tablet*******************/
+ @media only screen and (max-width: 1100px) {
+     .liste {
+         grid-template-columns: 1fr 1fr;
+         grid-column-gap: 1vw;
+     }
+
+     .billede {
+         width: 70%;
+     }
+
+     h1 {
+         font-size: 1.7em;
+         font-weight: 100;
+     }
+
+     h2 {
+         font-size: 1.2rem;
+         font-weight: 200;
+     }
+
+     h3 {
+         font-size: 2rem;
+     }
+
+     p {
+         font-size: 1.2rem;
+         font-weight: 100;
+     }
+ }
+
+ /*****************mobil*******************/
+ @media only screen and (max-width: 600px) {
+     .liste {
+         grid-template-columns: 1fr;
+         grid-column-gap: 1vw;
+     }
+
+     .billede {
+         width: 50%;
+     }
+
+     h1 {
+         font-size: 1em;
+         font-weight: 100;
+     }
+
+     h2 {
+         font-size: 1rem;
+         font-weight: 200;
+     }
+
+     h3 {
+         font-size: 1.5rem;
+     }
+
+     p {
+         font-size: 1rem;
+         font-weight: 100;
+     }
+ }
