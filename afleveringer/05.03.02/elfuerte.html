@@ -12,41 +12,46 @@
 
     <header>
         <picture>
-            <source media="(min-width: 1024px)" srcset="billeder_af_restaurant/coverbillede_desktop.png">
-            <source media="(min-width: 768px)" srcset="billeder_af_restaurant/coverbillede_tablet.png">
+            <source media="(min-width: 1024px)" srcset="billeder_af_restaurant/coverbillede_desktop_cut.png">
+            <source media="(min-width: 768px)" srcset="billeder_af_restaurant/coverbillede_tablet_cut.png">
             <source media="(min-width: 450px)" srcset="billeder_af_restaurant/coverbillede_mobile.png">
             <img src="billeder_af_restaurant/coverbillede_mobile.png" alt="coverbillede">
         </picture>
-    </header>
-    <nav>
-        <button class="filter valgt" data-hold="alle">Alle</button>
-        <button class="filter" data-hold="foretter">Foretter</button>
-        <button class="filter" data-hold="hovedretter">Hovedretter</button>
-        <button class="filter" data-hold="desserter">Desserter</button>
-        <button class="filter" data-hold="drikkevarer">Drikkevare</button>
-        <button class="filter" data-hold="vin">Vin</button>
-        <button class="filter" data-hold="omos">Om os</button>
 
-        <span id="burgermenu">☰</span>
-        <ul id="menu" class="hidden">
-            <li class="filter" data-hold="alle">Alle</li>
-            <li class="filter" data-hold="foretter">Foretter</li>
-            <li class="filter" data-hold="hovedretter">Hovedretter</li>
-            <li class="filter" data-hold="desserter">Desserter</li>
-            <li class="filter" data-hold="drikkevarer">Drikkevare</li>
-            <li class="filter" data-hold="vin">Vin</li>
-            <li class="filter" data-hold="omos">Om os</li>
-        </ul>
-    </nav>
+        <nav>
+
+            <span id="burgermenu">☰</span>
+            <ul id="menu" class="hidden">
+                <li class="filter" data-hold="alle">Alle</li>
+                <li class="filter" data-hold="foretter">Foretter</li>
+                <li class="filter" data-hold="hovedretter">Hovedretter</li>
+                <li class="filter" data-hold="desserter">Desserter</li>
+                <li class="filter" data-hold="drikkevarer">Drikkevare</li>
+                <li class="filter" data-hold="vin">Vin</li>
+                <li class="filter"><a href="index.html">Om os</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <main>
+
         <div id="baggrund">
+            <button class="filter valgt" data-hold="alle">Alle</button>
+            <button class="filter" data-hold="foretter">Foretter</button>
+            <button class="filter" data-hold="hovedretter">Hovedretter</button>
+            <button class="filter" data-hold="desserter">Desserter</button>
+            <button class="filter" data-hold="drikkevarer">Drikkevare</button>
+            <button class="filter" data-hold="vin">Vin</button>
+            <a href="index.html"> <button class="filter">Om os</button></a>
+
             <h1>El Fuerte - mexicansk restaurant i hjertet af København</h1>
+            <h3>Alle Retter</h3>
             <div class="liste"></div>
         </div>
     </main>
 
-    <footer>El Fuerte - +45 XX XX XX XX - Bredgade 54, 1260 København</footer>
+    <footer>El Fuerte - +45 XX XX XX XX - Bredgade 54, 1260 København - Åbningstider: Man-Fre kl. 10-22, Lørdag kl. 12-00 & Søndag kl. 12-21</footer>
 
     <script src="elfuerte.js"></script>
 </body>

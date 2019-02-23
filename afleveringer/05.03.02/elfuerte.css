@@ -4,7 +4,10 @@
      background-color: #22B573;
  }
 
-
+ a {
+     text-decoration: none;
+     color: black;
+ }
 
  h1 {
      display: grid;
@@ -12,6 +15,7 @@
      font-family: Sukhumvit Set;
      font-weight: 100;
      font-size: 2em;
+     font-style: italic;
  }
 
  h2 {
@@ -52,6 +56,7 @@
      background-color: rgba(244, 244, 244, 0.72);
      margin: 0vw 5vw 1vw 5vw;
      padding: 1vw;
+     text-align: center;
  }
 
  .liste {
@@ -85,8 +90,13 @@
  nav {
      text-align: center;
      margin: 1vw 0vw;
-     margin: 1vw 0vw;
+     /*     position: absolute;*/
+     /*
+     top: 0vw;
+     left: 32vw;
+*/
  }
+
 
 
  button {
@@ -162,6 +172,7 @@
          max-width: 17vw;
          position: fixed;
          top: 0;
+         left: 0;
      }
 
      main {
@@ -253,6 +264,11 @@
      p {
          font-size: 1.2rem;
          font-weight: 100;
+     }
+
+     button {
+         font-size: 0.9rem;
+         padding: 0.5vw;
      }
  }
 

@@ -48,7 +48,7 @@
 
        function filtrering() {
            filter = this.getAttribute("data-hold");
-           document.querySelector("h2").textContent = this.textContent;
+           document.querySelector("h3").textContent = this.textContent;
            document.querySelectorAll(".filter").forEach(fjernfarve => {
                fjernfarve.classList.remove("valgt");
            });
@@ -62,10 +62,10 @@
 
    }
 
-   document.querySelector("header").addEventListener("click", hjem);
+   document.querySelector("header picture").addEventListener("click", hjem);
 
    function hjem() {
-       location.reload();
+       location.href = "index.html"
    }
 
    function toggleMenu() {
