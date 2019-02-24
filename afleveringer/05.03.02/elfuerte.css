@@ -23,7 +23,7 @@
      text-align: center;
      font-family: Sukhumvit Set;
      font-weight: 100;
-     font-size: 2em;
+     font-size: 1.5em;
  }
 
  h3 {
@@ -62,15 +62,15 @@
  .liste {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
-     grid-column-gap: 1vw;
-     grid-row-gap: 1vw;
+     grid-column-gap: 0vw;
+     grid-row-gap: 0vw;
      padding: 2vw;
      cursor: pointer;
  }
 
 
  .billede {
-     width: 100%;
+     width: 70%;
      display: grid;
      margin: 0 auto;
  }
@@ -218,7 +218,7 @@
      padding: 1vw;
      box-sizing: border-box;
      width: 90vw;
-     height: 90vh;
+     height: 100vh;
      margin: auto;
  }
 
@@ -234,6 +234,25 @@
 
  .om {
      padding: 2vw;
+ }
+
+ #masker {
+     position: absolute;
+
+ }
+
+ .skelet1 {
+     position: relative;
+     top: -1vw;
+     left: 5vw;
+     width: 50%;
+ }
+
+ .skelet2 {
+     position: relative;
+     top: -10vw;
+     left: 68vw;
+     width: 50%;
  }
 
  /*****************tablet*******************/
@@ -270,6 +289,26 @@
          font-size: 0.9rem;
          padding: 0.5vw;
      }
+
+     .skelet1 {
+         top: -1vw;
+         left: 5vw;
+     }
+
+     .skelet2 {
+         top: -12vw;
+         left: 63vw;
+
+     }
+ }
+
+ /*****************lille tablet*******************/
+ @media only screen and (max-width: 770px) {
+     .skelet2 {
+         top: -17vw;
+         left: 57vw;
+
+     }
  }
 
  /*****************mobil*******************/
@@ -280,7 +319,7 @@
      }
 
      .billede {
-         width: 50%;
+         width: 40%;
      }
 
      h1 {
@@ -294,11 +333,56 @@
      }
 
      h3 {
-         font-size: 1.5rem;
+         font-size: 1rem;
      }
 
      p {
          font-size: 1rem;
          font-weight: 100;
+     }
+
+     .skelet1 {
+         top: -9vw;
+         left: -7vw;
+         width: 30%;
+     }
+
+     .skelet2 {
+         top: -11vw;
+         left: 32vw;
+         width: 30%;
+
+     }
+ }
+
+ /*****************mobil L*******************/
+ @media only screen and (max-width: 426px) {
+     .skelet2 {
+         top: -10vw;
+         left: 46vw;
+         width: 30%;
+
+     }
+ }
+
+ /*****************mobil M*******************/
+ @media only screen and (max-width: 376px) {
+
+     .skelet2 {
+         top: -11vw;
+         left: 40vw;
+         width: 30%;
+
+     }
+ }
+
+ /*****************mobil S*******************/
+ @media only screen and (max-width: 321px) {
+
+     .skelet2 {
+         top: -10vw;
+         left: 31vw;
+         width: 30%;
+
      }
  }
