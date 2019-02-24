@@ -83,7 +83,7 @@
 
 
  header img {
-     width: 100%;
+     width: 100vw;
      cursor: pointer;
  }
 
@@ -353,6 +353,15 @@
          width: 30%;
 
      }
+
+     #indhold {
+         margin: 5vw auto;
+     }
+
+     #tilbage {
+         margin: 10vw;
+     }
+
  }
 
  /*****************mobil L*******************/

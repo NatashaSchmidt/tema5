@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="robots" content="noindex">
+    <title>El Fuerte</title>
     <style>
         header {
             cursor: pointer;
@@ -15,18 +16,24 @@
             margin: 0;
         }
 
+        header img {
+            width: 100vw;
+        }
+
         #om_os {
             background-color: rgba(244, 244, 244, 0.72);
             margin: 0vw 5vw 1vw 5vw;
-            padding: 1vw;
+            padding: 5vw;
             text-align: center;
             position: absolute;
             top: 13vw;
-            left: 9vw;
+            left: 5vw;
             width: 70vw;
         }
 
-        button {
+
+        a {
+            text-decoration: none;
             margin: 1vw;
             font-size: 1rem;
             font-family: Sukhumvit Set;
@@ -35,10 +42,7 @@
             border-radius: 5%;
             min-width: 10vw;
             cursor: pointer;
-        }
-
-        a {
-            text-decoration: none;
+            padding: 1vw;
         }
 
         h2 {
@@ -60,7 +64,7 @@
             padding: 5vw;
         }
 
-        footer {
+        .footer {
             font-size: 1rem;
             font-weight: 200;
             font-family: Sukhumvit Set;
@@ -106,6 +110,17 @@
             }
         }
 
+        /*****************lille tablet*******************/
+        @media only screen and (max-width: 770px) {
+
+            #om_os {
+
+                top: 4vw;
+                margin: 0;
+                width: 80vw;
+            }
+        }
+
         /*****************mobil*******************/
         @media only screen and (max-width: 600px) {
 
@@ -117,8 +132,8 @@
 
             #om_os {
 
-                top: 10vw;
-                left: 5vw;
+                top: 9vw;
+                left: 1vw;
                 width: 88vw;
             }
 
@@ -133,14 +148,46 @@
                 font-weight: 100;
             }
 
-            button {
+            a {
                 font-size: 0.8rem;
             }
 
-            footer {
+            .footer {
                 font-size: 0.5rem;
                 top: 96vw;
                 width: 98vw;
+            }
+        }
+
+        /*****************mobil M*******************/
+        @media only screen and (max-width: 376px) {
+
+            #om_os {
+
+                top: 9vw;
+                left: 1vw;
+                width: 88vw;
+            }
+
+            p {
+                font-size: 0.7rem;
+                font-weight: 100;
+            }
+        }
+
+        /*****************mobil S*******************/
+        @media only screen and (max-width: 321px) {
+
+            #om_os {
+
+                top: 4vw;
+                left: 4vw;
+                width: 83vw;
+            }
+
+            p {
+                font-size: 0.6rem;
+                font-weight: 100;
             }
         }
     </style>
@@ -152,7 +199,7 @@
             <source media="(min-width: 1024px)" srcset="billeder_af_restaurant/forside_desktop.png">
             <source media="(min-width: 768px)" srcset="billeder_af_restaurant/forside_tablet.png">
             <source media="(min-width: 450px)" srcset="billeder_af_restaurant/forside_mobil.png">
-            <img src="billeder_af_restaurant/forside_mobil.png" width="100%" alt="forside">
+            <img src="billeder_af_restaurant/forside_mobil.png" alt="forside">
         </picture>
 
         <div id="om_os">
@@ -161,14 +208,14 @@
                 <p>Det mexicanske køkken er kendt for sin kogekunst med intens og varierende smag, farverige dekorationer og variationer af krydderier som blandt andet inkluderer chili, spidskommen, oregano, koriander, epazote, kanel, kakao og en masse mere. Desuden indeholder retterne ofte chipotle-jalapenoer, løg og hvidløg. </p>
                 <p>
                     El Fuerte viser alle de mexicanske kendetegne og har derudover et unikt vinkort fra kendte og veletablerede europæiske og oversøiske vinhuse, som vi nøje har sammensat med vores udvalg af mexicansk mad i København
-                    El Fuerte er en romantisk mexicansk res- taurant med autentisk atmosfære, levende lys og hyggelig stemning, som også bliver understøttet i designet.</p>
+                    El Fuerte er en romantisk mexicansk restaurant med autentisk atmosfære, levende lys og hyggelig stemning, som også bliver understøttet i designet.</p>
 
             </div>
-            <a href="elfuerte.html">
-                <button>Klik her for at se vores menukort -></button>
-            </a>
+
+            <a href="elfuerte.html">Klik her for at se vores menukort ⟶</a>
+
         </div>
-        <footer>El Fuerte - +45 XX XX XX XX - Bredgade 54, 1260 København - Åbningstider: Man-Fre kl. 10-22, Lørdag kl. 12-00 & Søndag kl. 12-21</footer>
+        <div class="footer">El Fuerte - +45 XX XX XX XX - Bredgade 54, 1260 København - Åbningstider: Man-Fre kl. 10-22, Lørdag kl. 12-00 & Søndag kl. 12-21</div>
     </header>
 
 
