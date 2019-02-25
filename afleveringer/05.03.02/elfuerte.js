@@ -27,7 +27,7 @@
 
                             <img class="billede" src="billeder/${enkelteRetter.billede}.jpg.png" alt="${enkelteRetter.navn}">
                             <h2>${enkelteRetter.id}. ${enkelteRetter.navn}</h2>
-                            <p>Pris: ${enkelteRetter.lang},-</p>
+                            <p>${enkelteRetter.lang},-</p>
                         `;
                    hej.insertAdjacentHTML("beforeend", template);
                    hej.lastElementChild.addEventListener("click", () => {

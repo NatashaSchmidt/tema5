@@ -139,6 +139,14 @@
          display: none;
      }
 
+     .singleview {
+         display: block;
+         position: absolute;
+         width: 15vw;
+         top: 76vw;
+         left: 5vw;
+     }
+
      .hidden {
          transform: translateX(200%);
          /*    opacity: 0;*/
@@ -281,7 +289,7 @@
      }
 
      p {
-         font-size: 1.2rem;
+         font-size: 0.9rem;
          font-weight: 100;
      }
 
@@ -337,8 +345,12 @@
      }
 
      p {
-         font-size: 1rem;
+         font-size: 0.8rem;
          font-weight: 100;
+     }
+
+     footer {
+         font-size: 0.7rem;
      }
 
      .skelet1 {

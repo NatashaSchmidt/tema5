@@ -1,7 +1,7 @@
 [
     {
         "id": 10,
-        "kategori": "foretter",
+        "kategori": "Foretter",
         "navn": "Tortilla Chips & hjemmelavet salsa",
         "pris": 64,
         "lang": "Hjemmelavet, sprøde majstortillas serveres med hjemmelavet salsa",
@@ -9,7 +9,7 @@
   },
     {
         "id": 12,
-        "kategori": "foretter",
+        "kategori": "Foretter",
         "navn": "Nachos con Salsa",
         "pris": 79,
         "lang": "Sprøde tortilla chips, gratineret med cheddar ost og jalapenos, serveres med salsa",
@@ -17,7 +17,7 @@
   },
     {
         "id": 14,
-        "kategori": "foretter",
+        "kategori": "Foretter",
         "navn": "Mexicansk rejecocktail",
         "pris": 99,
         "lang": "Et stk. friteret majstortilla fyldt med lækre kæmperejer, hjemmelavet mango salsa, avocado og delikat chili-lime dressing",
@@ -25,7 +25,7 @@
   },
     {
         "id": 19,
-        "kategori": "foretter",
+        "kategori": "Foretter",
         "navn": "Grillede kæmperejer",
         "pris": 99,
         "lang": "Grillede chili-lime marinerede kæmperejser flamberet med hvidvin, anrettet på sprød salat.",
@@ -33,7 +33,7 @@
   },
     {
         "id": 2,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Burrito",
         "pris": 169,
         "lang": "Cheddar ost gratineret hvedemelstortilla fyldt med kylling/oksefilet, cheddar ost, jalapenos & bønner, topped med creme fraiche, hertil mexicansk ris og en krydret sauce.",
@@ -41,7 +41,7 @@
   },
     {
         "id": 21,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Chimichanga",
         "pris": 179,
         "lang": "Friteret & indbagt hvedemelstortilla fyldt med kylling/oksefilet, cheddar ost, jalapenos & bønner, gratineret i ovnen, toppet med guacamole, hertil mexicansk ris og krydret sauce.",
@@ -49,7 +49,7 @@
   },
     {
         "id": 25,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Vegetar Enchiladas",
         "pris": 149,
         "lang": "Gratineret majs tortillas fyldt med sauteerede artiskokker, skalotte løg, tomater, jalapenos og friske koriander i en fløde sauce, serveres med mexicansk ris og enchilada sauce.",
@@ -57,7 +57,7 @@
   },
     {
         "id": 34,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Kæmperejer Fajitas",
         "pris": 249,
         "lang": "Hvidløgs-lime marinerede kæmperejer, Black tiger, flameret i hvidvin, sauteret med to forskellige løg, pebre frugter jalapenos, toppet med koriander, serveres med cheddar ost, salsa, guacamole, creme fraiche og hvedemelstortillas.",
@@ -65,7 +65,7 @@
   },
     {
         "id": 36,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Beef Fajitas",
         "pris": 239,
         "lang": "Rødvinsmarineret oksemørbrad serveres med sauterede røde/grønne pebre, to forskellige løg, toppet med koriander, serveres med cheddar ost, hvedemelstortillas, salsa, guacamole & creme fraiche.",
@@ -73,7 +73,7 @@
   },
     {
         "id": 38,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Chicken Fajitas",
         "pris": 189,
         "lang": "Strimler af chili-lime marinerede kyllingebryst, sauteret med mexicanske krydderier, rød/grønne pebre, to forskellige løg, toppet med koriander, serveret med cheddar ost, hvedemelstortilla, salsa, guacamol & creme fraiche.",
@@ -81,7 +81,7 @@
   },
     {
         "id": 43,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Mexicansk Is",
         "pris": 89,
         "lang": "Cremet vanilie is med taquila og kahlua, serveres med frugter",
@@ -89,7 +89,7 @@
   },
     {
         "id": 44,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Bananasplit",
         "pris": 89,
         "lang": "Modne bananer serveres med vanilieis, chokolade sauce, flødeskum og sæsonens frugter",
@@ -97,7 +97,7 @@
   },
     {
         "id": 54,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Sodavand",
         "pris": 35,
         "lang": "Vælg mellem Coca Cola, Cola Zero, Fanta eller Sprite",
@@ -105,7 +105,7 @@
   },
     {
         "id": 55,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "San Miguel (5,4%)",
         "pris": 48,
         "lang": "Nyd en halv liter kold og lækker San Miguel (5,4% alc.)",
@@ -113,7 +113,7 @@
   },
     {
         "id": 62,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Corona (4,6%)",
         "pris": 48,
         "lang": "Nyd en kold og lækker Carona (4,6% alc.)",
@@ -121,7 +121,7 @@
   },
     {
         "id": 65,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Mojito, Cuba",
         "pris": 99,
         "lang": "Lime, 4 cl. Havana rom, 1 cl. Angostrua og en håndfuld mynte",
@@ -129,7 +129,7 @@
   },
     {
         "id": 76,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Pina Colada, Puerto Rico",
         "pris": 99,
         "lang": "4 cl. rom, frisk ananas, fløde og kokos mælk.",
@@ -137,7 +137,7 @@
   },
     {
         "id": 77,
-        "kategori": "vin",
+        "kategori": "Vin",
         "navn": "2011 La Cetto, Petite-sirah",
         "pris": 369,
         "lang": "Virkelig mørk i glasset med en flot dyb rubinrød farve, med en ekstraordinær klarhed. Smagen er krydret, en snert af røde frugter. Den er velafbalanceret med modne tannier, ligger længe i munden, har en tør men alligevel meget rund og velafbalanceret afslutning.",
@@ -145,7 +145,7 @@
   },
     {
         "id": 78,
-        "kategori": "vin",
+        "kategori": "Vin",
         "navn": "2012 La Cetto Santa Cecilia, Cabernet",
         "pris": 349,
         "lang": "Det er en formidabel rødvin med en meget flot klarhed. Smagen afslører masser af modne frugter, god struktur, fylde og længde.",
@@ -153,7 +153,7 @@
   },
     {
         "id": 79,
-        "kategori": "vin",
+        "kategori": "Vin",
         "navn": "2011 La Cetto, Zinfandel",
         "pris": 399,
         "lang": "Vidunderlig mørk og violet farve. Unik aroma af søde frugter, ristede krydderier og læder. Den har en lang vedvarende smag, gode tannier, er tør men samtidig meget rund og velafbalanceret, som er karakteristisk for druetypen.",
@@ -161,7 +161,7 @@
   },
     {
         "id": 80,
-        "kategori": "vin",
+        "kategori": "Vin",
         "navn": "2010 La Cetto, Nebbiolo",
         "pris": 449,
         "lang": "Denne Nebbiolo Pritvate Reserve har ligget på franske fade i 16 måneder (60% nye fade), og lagret 2 år på flaske før vinen bliver frigivet til salg. Nebbiolo'en har en meget intens rubinrød farve med granatrøde strejf, samt en aroma af røde frugter, tørrede blommer, roser, vanlije og fad.",
