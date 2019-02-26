@@ -54,7 +54,7 @@
 
  #baggrund {
      background-color: rgba(244, 244, 244, 0.72);
-     margin: 0vw 5vw 1vw 5vw;
+     margin: 0vw 15vw 1vw;
      padding: 1vw;
      text-align: center;
  }
@@ -258,8 +258,8 @@
 
  .skelet2 {
      position: relative;
-     top: -10vw;
-     left: 68vw;
+     top: -9vw;
+     left: 48vw;
      width: 50%;
  }
 
@@ -305,16 +305,23 @@
 
      .skelet2 {
          top: -12vw;
-         left: 63vw;
+         left: 43vw;
 
      }
  }
 
  /*****************lille tablet*******************/
  @media only screen and (max-width: 770px) {
+     .skelet1 {
+         width: 40%;
+         top: 0vw;
+         left: 7vw;
+     }
+
      .skelet2 {
-         top: -17vw;
-         left: 57vw;
+         width: 40%;
+         top: 0vw;
+         left: 35vw;
 
      }
  }
@@ -379,8 +386,8 @@
  /*****************mobil L*******************/
  @media only screen and (max-width: 426px) {
      .skelet2 {
-         top: -10vw;
-         left: 46vw;
+         top: -9vw;
+         left: 26vw;
          width: 30%;
 
      }
@@ -389,10 +396,16 @@
  /*****************mobil M*******************/
  @media only screen and (max-width: 376px) {
 
+     .skelet1 {
+         top: 0vw;
+         left: -10vw;
+         width: 25%;
+     }
+
      .skelet2 {
-         top: -11vw;
-         left: 40vw;
-         width: 30%;
+         top: 0vw;
+         left: 23vw;
+         width: 25%;
 
      }
  }
@@ -400,10 +413,14 @@
  /*****************mobil S*******************/
  @media only screen and (max-width: 321px) {
 
+     .skelet1 {
+         left: -12vw;
+     }
+
      .skelet2 {
-         top: -10vw;
-         left: 31vw;
-         width: 30%;
+         top: 0vw;
+         left: 16vw;
+         width: 25%;
 
      }
  }
